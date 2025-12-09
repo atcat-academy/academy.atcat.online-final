@@ -4,10 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --padding-custom: 1rem;
+  
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: 0 0% 100%;
   --foreground: oklch(0.145 0 0);
+  --color-atcat-purple: 222.2 84% 4.9%;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -41,7 +42,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --padding-custom: 1.5rem;
+   
     /* signin color schemes */
     --signin-text-color: black;
     --signin-background-color: teal;
@@ -55,7 +56,7 @@
 
 @media (min-width: 1024px) {
   :root {
-    --padding-custom: 2rem;
+   
     /* signin color schemes */
     --signin-text-color: black;
     --signin-background-color: teal;
@@ -70,10 +71,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-playfair-display: var(--font-playfair-display);
+  --font-inter: var(--font-inter);
+  /* ATCAT Brand Colors */
+  --color-atcat-blue: #0eb4f5;
+  --color-atcat-black: #070a0b;
+  --color-atcat-white: #e6ebee;
+  --color-atcat-purple_check: #020817;
 }
 
 body {
-  padding: var(--padding-custom);
+  
 }
 
 @theme inline {
@@ -115,7 +123,7 @@ body {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: var(--color-atcat-purple_check);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -168,5 +176,18 @@ body {
   background-image: linear-gradient(to right, rgb(51 65 85 / 0.25) 1px, transparent 1px),
     linear-gradient(to bottom, rgb(51 65 85 / 0.25) 1px, transparent 1px);
   background-size: 3rem 3rem;
+}
+
+/* Large grid background patterns */
+.bg-grid-large-black {
+  background-image: linear-gradient(to right, rgb(0 0 0) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 0 0) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+}
+
+.dark .bg-grid-large-white {
+  background-image: linear-gradient(to right, rgb(255 255 255) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255) 1px, transparent 1px);
+  background-size: 4rem 4rem;
 }
 

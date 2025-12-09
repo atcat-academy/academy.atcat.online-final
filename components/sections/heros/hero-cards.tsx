@@ -48,8 +48,8 @@ export default function HeroCards() {
               </div>
 
               {/* Content */}
-              <h2 className="text-3xl font-bold mb-4">ATCAT Academy</h2>
-              <p className="text-muted-foreground mb-6 text-base leading-relaxed">
+              <h2 className="text-3xl font-playfair-display font-bold mb-4 ">What our students say</h2>
+              <p className="text-muted-foreground mb-6 text-base leading-relaxed font-inter ">
                 Start your journey to becoming an air traffic controller. 
                 Access comprehensive training materials, practice assessments, 
                 and expert-designed courses.

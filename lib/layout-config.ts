@@ -1,13 +1,11 @@
 import { ComponentType } from 'react'
 
 // Component maps
-import HeaderHamed from '@/components/headers/header-hamed'
-import HeaderMinimal from '@/components/headers/header-minimal'
-import { HeaderFree } from '@/components/headers/header-free'
-import FooterHamed from '@/components/footers/footer-hamed'
-import FooterMinimal from '@/components/footers/footer-minimal'
-import LogoHamed from '@/components/logos/logo-hamed'
-import LogoMinimal from '@/components/logos/logo-minimal'
+
+
+import { Header } from '@/components/headers/header'
+import  FooterMinimal  from '@/components/footers/footer-minimal'
+import LogoATCAT from '@/components/logos/logo-atcat-online'
 
 export interface ComponentOption {
   value: string
@@ -31,19 +29,17 @@ const linkItems = [
 export const LAYOUT_COMPONENTS: LayoutComponentConfig = {
   header: [
     { value: 'none', label: 'None' },
-    { value: 'header-hamed', label: 'Header Hamed', component: HeaderHamed },
-    { value: 'header-minimal', label: 'Header Minimal', component: HeaderMinimal },
-    { value: 'header-free', label: 'Header Free', component: HeaderFree },
+    
+    { value: 'header-atcat', label: 'Header ATCAT', component: Header },
   ],
   footer: [
     { value: 'none', label: 'None' },
-    { value: 'footer-hamed', label: 'Footer Hamed', component: FooterHamed },
     { value: 'footer-minimal', label: 'Footer Minimal', component: FooterMinimal },
   ],
   logo: [
     { value: 'none', label: 'None' },
-    { value: 'logo-hamed', label: 'Logo Hamed', component: LogoHamed },
-    { value: 'logo-minimal', label: 'Logo Minimal', component: LogoMinimal },
+    { value: 'logo-atcat-online', label: 'Logo ATCAT Online', component: LogoATCAT },
+    
   ],
 }
 

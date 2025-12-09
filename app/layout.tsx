@@ -7,9 +7,15 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Playfair_Display, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Providers from './providers/providers'
+
+const boogaloo = localFont({
+  src: '../public/fonts/Boogaloo-Regular.ttf',
+  variable: '--font-boogaloo',
+})
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -19,6 +25,19 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
+})
+
+const playfairDisplay = Playfair_Display({
+  variable: '--font-playfair-display',
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+})
+
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
@@ -33,13 +52,13 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Providers>
+      <html lang="en" suppressHydrationWarning>
+          <body className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${inter.variable} ${boogaloo.variable} antialiased`}>
+            <Providers>
+              
+            {children}
+            </Providers>
             
-          {children}
-          </Providers>
-          
         </body>
       </html>
     </ClerkProvider>

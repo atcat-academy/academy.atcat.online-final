@@ -1,6 +1,8 @@
 import DynamicLayout from '@/components/layouts/dynamic-layout'
-import { HeaderFree } from '@/components/headers/header-free'
+import { Header } from '@/components/headers/header'
 import FooterHamed from '@/components/footers/footer-hamed'
+import PageContainer from '@/components/layouts/page-container'
+
 
 // export default function SiteLayout({
 //   children,
@@ -17,10 +19,14 @@ export default function SiteLayout({
     children: React.ReactNode
   }) {
     return (
-        <div className='flex min-h-screen flex-col'>
-            <HeaderFree />
-        <main className='flex-1'>{children}</main>
-        <FooterHamed />
+        <div className='flex min-h-screen flex-col mx-auto w-full'>
+            <Header />
+        <main className='flex-1'>
+          <PageContainer>
+            {children}
+          </PageContainer>
+        </main>
+       
         </div>
     )
   }
