@@ -9,7 +9,7 @@ export const StudentTestimonials = [
       quote: "Using ATCAT transformed my learning experience. The platform’s play-to-learn approach made even the most technical language and scenarios approachable. I went from having zero aviation experience to being well-versed in essential ATC terminology and concepts. This was a game changer for my ATC Training.",
       name: "Morgan L.",
       designation: "Air Traffic Controller",
-      src: "/testimonials/morgan_l.png",
+      src: "https://jre0b9rm4g.ufs.sh/f/U5XJkiAefLmt4hEEBA8z3nswxJeQSNDdY857zoqir9AlBMhT",
     },
     {
       quote: "I was initially intimidated by the complexity of air traffic control, especially with no aviation background. ATCAT not only demystified the jargon but also broke down advanced topics into engaging, digestible lessons. Thanks to this immersive preparation, I walked into my ATC rating course feeling ready to succeed.",
