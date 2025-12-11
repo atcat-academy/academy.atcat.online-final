@@ -12,9 +12,9 @@ import HeroCards from "@/components/sections/heros/hero-cards";
 export const Hero = () => {
   const trimmed_flipwords = lp_flipwords.map(word => word.trim());
   return (
-    <MaxWidthWrapper className="relative overflow-hidden min-h-[950px] ">
+    <MaxWidthWrapper className="relative min-h-[950px] overflow-visible">
       
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-visible">
         <BackgroundBeams />
       </div>
 
