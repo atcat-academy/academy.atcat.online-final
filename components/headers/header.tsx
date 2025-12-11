@@ -10,9 +10,9 @@ import { Authenticated, Unauthenticated } from 'convex/react'
 import { SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
 
 const freeItems = [
-    { name: 'Why Subscribe?', href: '/play' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Philosophy', href: '/philosophy' },
+    { name: 'Pricing', href: 'https://subscriptions.atcat.online' },
+    { name: 'FAQ', href: '/faq' },
     { name: 'Blog', href: 'https://blog.atcat.online' },
 ]
 
@@ -50,8 +50,8 @@ export const Header = () => {
                             
                             <Logo />
                             {/* Media query text */}
-                            <div className="absolutez-100 top-100 left-10 text-sm text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500">Media red - orange - yellow - green - blue - purple</div>
-          
+                            {/* <div className="absolutez-100 top-100 left-10 text-sm text-red-500 sm:text-orange-500 md:text-yellow-500 lg:text-green-500 xl:text-blue-500 2xl:text-purple-500">Media red - orange - yellow - green - blue - purple</div>
+           */}
                             <button
                                 onClick={() => setMenuState(!menuState)}
                                 aria-label={menuState == true ? 'Close Menu' : 'Open Menu'}

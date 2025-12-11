@@ -73,6 +73,7 @@
   --font-mono: var(--font-geist-mono);
   --font-playfair-display: var(--font-playfair-display);
   --font-inter: var(--font-inter);
+  --font-heading: var(--font-playfair-display);
   /* ATCAT Brand Colors */
   --color-atcat-blue: #0eb4f5;
   --color-atcat-black: #070a0b;
@@ -189,5 +190,21 @@ body {
   background-image: linear-gradient(to right, rgb(255 255 255) 1px, transparent 1px),
     linear-gradient(to bottom, rgb(255 255 255) 1px, transparent 1px);
   background-size: 4rem 4rem;
+}
+
+/* Infinite Moving Cards Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--animation-distance, 50%)));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) linear infinite;
+  animation-direction: var(--animation-direction, forwards);
+  will-change: transform;
 }
 

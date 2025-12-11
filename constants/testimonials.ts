@@ -3,19 +3,19 @@ export const StudentTestimonials = [
       quote: "ATCAT gave me a serious head start. I entered the program without any aviation background, but the app’s interactive lessons quickly familiarized me with the ATC jargon and built a solid foundation. By the time I enrolled, I was already tackling advanced concepts with confidence. It truly leveled the playing field for me.",
       name: "Alex R.",
       designation: "Trainee, ATC",
-      src: "/testimonials/alex_r.png",
+      src: "https://jre0b9rm4g.ufs.sh/f/U5XJkiAefLmtJeVb8QT3akyWCL7Pczbd1VHNlQjnuUi5MDfr",
     },
     {
-      quote: "Using ATCAT transformed my learning experience. The platform’s play-to-learn approach made even the most technical language and scenarios approachable. I went from having zero aviation experience to being well-versed in essential ATC terminology and concepts. This early preparation was a game changer in my journey to earning my ATC Rating.",
+      quote: "Using ATCAT transformed my learning experience. The platform’s play-to-learn approach made even the most technical language and scenarios approachable. I went from having zero aviation experience to being well-versed in essential ATC terminology and concepts. This was a game changer for my ATC Training.",
       name: "Morgan L.",
       designation: "Air Traffic Controller",
       src: "/testimonials/morgan_l.png",
     },
     {
-      quote: "I was initially intimidated by the complexity of air traffic control, especially with no aviation background. ATCAT not only demystified the jargon but also broke down advanced topics into engaging, digestible lessons. Thanks to this immersive preparation, I walked into my ATC rating course feeling ready and capable, and it made all the difference in my success.",
+      quote: "I was initially intimidated by the complexity of air traffic control, especially with no aviation background. ATCAT not only demystified the jargon but also broke down advanced topics into engaging, digestible lessons. Thanks to this immersive preparation, I walked into my ATC rating course feeling ready to succeed.",
       name: "Maria, S",
       designation: "Qualified ATC",
-      src: "/testimonials/maria_s.png",
+      src: "https://jre0b9rm4g.ufs.sh/f/U5XJkiAefLmtNpLm8Kt3SAYqBR7UmOulDzxs4VGTa5L1WKpr",
     },
     {
       quote: "ATCAT turned my initial hesitation about my lack of aviation experience into pure confidence. The app's engaging lessons and simulations introduced me to the essential ATC jargon and even laid the groundwork for advanced topics. I felt well-prepared and supported when I entered the rating program.",
@@ -27,7 +27,7 @@ export const StudentTestimonials = [
       quote: "I never imagined that a play-to-learn platform could make such a difference. ATCAT broke down complex air traffic control concepts into fun, digestible modules. This approach not only familiarized me with the lingo but also set me up for tackling higher-level challenges in my ATC rating course, despite starting with no aviation background.",
       name: "Casey, L",
       designation: "Approach Controller",
-      src: "/testimonials/casey_l.png",
+      src: "https://jre0b9rm4g.ufs.sh/f/U5XJkiAefLmtlHNlCIquPfSa6gHWLB4MUxrzXpkeDVqNKI1b",
     },
   ];
   

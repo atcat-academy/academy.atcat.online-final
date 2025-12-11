@@ -11,10 +11,13 @@ import { GridBackground } from "@/components/styling/grid-background";
 export default function HomePage() {
 
   return (
-    <div className="h-full w-full mx-auto">
+    <div className="h-full w-full mx-auto overflow-x-hidden">
 {/* Hero Section */}
-      <section className="relative  z-0">
+      <section className="relative h-[950px] z-0">
+        <div className="absolute inset-0 z-0 mx-h-[800px]">
         <GridBackground />
+        </div>
+       
         <div className=" ">
             <Hero />
         </div>
@@ -27,38 +30,38 @@ export default function HomePage() {
       </section> */}
 
 {/* Testimonials Section */}
-      <section className="relative mt-10  bg-black ">
-        <div className="w-full">
-          <Heading className="dark:text-white/80 text-center text-balance sm:text-4xl text-[24px]">
+      <section className="relative bg-atcat-blue/5 py-8 h-[1000px] md:h-[600px] ">
+        <div >
+          <Heading className="dark:text-atcat-white">
               {"What our Students love about learning with"}
-              <span className="text-atcat-100 font-inter"> ATCAT</span>
+              <span className="text-atcat-blue font-inter font-bold "> ATCAT</span>
           </Heading>
           <AnimatedTestimonials testimonials={StudentTestimonials} />
         </div>
       </section>
 
 {/* Instructors Section */}
-      {/* <section className="relative h-full w-full flex flex-col items-center justify-start bg-gradient-to-b from-[#0C0A16] to-10% to-black ">
-        <Heading className="dark:text-white/80 text-center text-balance sm:text-4xl text-[24px]">
+      <section className="relative  h-[550px] ">
+        <Heading className="text-atcat-white bg-black py-10">
             {"What our Instructors say about"}
-            <span className="text-atcat-100 font-inter"> ATCAT </span>
+            <span className="text-atcat-blue font-inter font-bold "> ATCAT </span>
             {"Students"}
         </Heading>
         <InfiniteMovingCardsDemo />
-      </section> */}
+      </section>
 
 {/* Features Section */}
-      {/* <section className="relative mt-[30px] sm:mt=[40px] h-full w-full flex flex-col items-center justify-center bg-gradient-to-b from-black to-[#0C0A16]">
-        <Heading className="dark:text-white/80 sm:text-4xl text-[24px] text-center text-balance">
+      <section className="relative -mt-20 h-full w-full flex flex-col items-center justify-center bg-gradient-to-b from-black via-atcat-black to-atcat-blue/10  mx-auto">
+      <Heading className="dark:text-atcat-white">
             {"What you'll love about learning with"}
             <span className="text-atcat-100 font-inter"> ATCAT</span>
         </Heading>
         <Features />
-      </section> */}
+      </section>
 
 {/*Final CTA Section */}
-      {/* <section className="relative mt-[20px] mb-20 sm:mt-[40px] h-full w-full max-w-[72vw] sm:max-w-[60vw] mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-black to-[#0C0A16] text-black">
-        <div className="flex flex-col items-start justify-center gap-4 w-full mt-12 mb-8 border-2 border-atcat-100 rounded-2xl bg-atcat-100 p-6">
+      <section className="relative h-full    mx-auto flex flex-col items-center justify-center  text-black w-[70vw] md:w-[60vw] lg:max-w-7xl">
+        <div className="flex flex-col items-start justify-center gap-4 mt-12 mb-8 border-2 border-atcat-100 rounded-2xl bg-atcat-blue p-6 w-full">
             <p className=" text-sm font-bold mb-2">ARE YOU READY?</p>
             <p className=" text-xl font-bold">Join ATCAT Academy</p>
             <p className=" text-lg ">Sign up and start your journey to becoming an Air Traffic Controller</p>
@@ -68,7 +71,7 @@ export default function HomePage() {
           </ShinyButton>
        
           </div>
-      </section> */}
+      </section>
 
       
     </div>
